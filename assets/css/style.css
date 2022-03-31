@@ -1,0 +1,39 @@
+:root {
+    --azul-fundo: #EAF2FD;
+    --azul-links: #2A7AE4;
+    --azul-hoverlogo: #D4E4FA;
+    --azul-hover: #5595E9;
+    --branco: #FFFFFF;
+    --cinza-pesquisa: #F5F5F5;
+    --cinza-fundo: #E5E5E5;
+    --cinza-texto: #A2A2A2;
+    --preto-texto: #464646;
+
+    --raleway: 'Raleway', sans-serif;
+}
+head {
+    font-family: var(--raleway);
+    background-color: var(--branco);
+}
+body {
+    background: var(--branco);
+    display: grid;
+    grid-template-areas: 
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 125px auto auto;
+    font-family: var(--raleway);
+}
+.botao {
+    background-color: var(--branco);
+    background-image: url(../img/logo/seta.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    border: none;
+    color: var(--azul-links);
+    padding: 0 1.5rem;
+}
+.rodape {
+    color: white;
+}

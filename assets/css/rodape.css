@@ -1,0 +1,113 @@
+@media screen and (min-width: 0) { 
+    .rodape__institucional{
+        background-color: var(--azul-fundo);
+        display: grid;
+        justify-content: center;
+        padding: 2.5rem 0;
+        row-gap: 2.5rem;
+    }
+    .rodape__logo {
+        display: flex;
+        justify-content: center;
+    }
+    .rodape__logo--img {
+        height: 2.5rem;
+    }
+    .rodape__lista {
+        margin-left: 1rem;
+    }
+    .rodape__lista--item {
+        font-size: 16px;
+        margin-bottom: 1.5rem;
+    }
+    .rodape__lista--link {
+        color: var(--preto-texto);
+        text-decoration: none;
+    }
+    .rodape__contato {
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape__contato--titulo {
+        color: var(--preto-texto);
+        font-family: var(--raleway);
+        font-size: 16px;
+        margin-bottom: .5rem;
+    }
+    .rodape__contato--nome {
+        background-color: var(--branco);
+        border: none;
+        border-radius: 3px 3px 0 0;
+        color: var(--cinza-texto);
+        font-family: var(--raleway);
+        font-size: 13px;
+        font-weight: 500;
+        height: 2.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .rodape__contato--mensagem {
+        background-color: var(--branco);
+        border: none;
+        border-radius: 3px 3px 0 0;
+        color: var(--cinza-texto);
+        height: 4rem;
+        margin-bottom: .5rem;
+        width: 90vw;
+        font-weight: 500;
+    }
+    .rodape__contato--botao {
+        background-color: var(--azul-links);
+        border: none;
+        color: var(--branco);
+        display: flex;
+        font-family: var(--raleway);
+        font-size: 12px;
+        font-weight: 500;
+        justify-content: center;
+        margin-bottom: .5rem;
+        text-align: center;
+        transition: 400ms ease-in-out;
+        padding: .75rem .75rem;
+        width: 10rem;
+    }
+    .rodape__contato--botao:hover {
+        background-color: var(--azul-hover);
+    }
+    .rodape__criador--nome {
+        color: var(--preto-texto);
+        font-family: var(--raleway);
+        font-size: 16px;
+        font-weight: 500;
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .rodape__institucional{
+        column-gap: 2.5rem;
+        display: grid;
+        grid-template-columns: 20% 25% 1fr;
+    }
+    .rodape__logo {
+        align-items: flex-start;
+        margin-left: 2rem;
+    }
+    .rodape__lista--item {
+        font-size: 1rem;
+    }
+    .rodape__contato {
+        margin-right: 8rem;
+    }
+    .rodape__contato--mensagem {
+        font-size: 15px;
+        width: 100%;
+    }
+    .rodape__contato--nome {
+        font-size: 15px;
+    }
+    .rodape__contato--botao {
+        font-size: 14px;
+    }
+}

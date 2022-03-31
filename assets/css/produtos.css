@@ -1,0 +1,107 @@
+@media screen and (min-width: 0) {
+    .produtos {
+        padding: 1.5rem 1rem;
+    }
+    .produtos__cabecalho {
+        display: flex;
+        justify-content: space-between;
+    }
+    .produtos__titulo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .produtos__conteudo {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        grid-area: conteudo;
+        padding: 1rem 0;
+    }
+    .produtos__card {
+        background: var(--branco);
+        display: grid;
+        grid-template-areas: 
+            "card-imagem"
+            "card-corpo";
+        grid-template-columns: 100%;
+        margin-bottom: 1rem;
+    }
+        .produtos__card:nth-child(5) {
+            display: none;
+    }
+        .produtos__card:nth-child(6) {
+            display: none;
+    }   
+    .produtos__card--img {
+        grid-area: card-imagem;
+        height: 100%;
+        width: 100%;
+    }
+    .produtos__card--corpo {
+        display: grid;
+        grid-area: card-corpo;
+        grid-template-rows: 20% 40% 20%;
+        row-gap: .25rem;
+    }
+    .produtos__card--titulo {
+        color: var(--preto-texto);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .produtos__card--valor {
+        color: var(--preto-texto);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .produtos__card--pag {
+        color: var(--azul-links);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+    .produtos__cabecalho {
+        margin-right: 2rem;
+    }
+    .produtos__conteudo {
+        column-gap: .5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .produtos__card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .produtos__card {
+        width: calc(25% - 1rem);
+    }
+    .produtos__card:nth-child(5) {
+        display: none;
+    }
+    .produtos__card:nth-child(6) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos__card {
+        width: calc(16.6% - 1rem);
+    }
+    .produtos {
+        padding: 0 4rem;
+    }
+    .produtos__cabecalho {
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+    .produtos__card:nth-child(5) {
+        display: grid;
+        }
+    .produtos__card:nth-child(6) {
+        display: grid;
+    }
+}

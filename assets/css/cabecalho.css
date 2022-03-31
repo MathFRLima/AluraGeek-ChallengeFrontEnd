@@ -1,0 +1,85 @@
+@media screen and (min-width: 320px) {
+    .cabecalho {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+    }
+    .cabecalho__logo {
+        align-items: center;
+        display: flex;
+
+    }
+    .cabecalho__logo--img {
+        width: 8rem;
+    }
+    .cabecalho__pesquisa--barra {
+        display: none;
+    }
+    .cabecalho__pesquisa--botao {
+        background-color: var(--branco);
+        background-image: url(../img/logo/lupa.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        display: flex;
+        height: 2rem;
+        width: 2rem;
+    }
+    .cabecalho__login--botao {
+        background-color: var(--branco);
+        border: 1px solid var(--azul-links);
+        box-sizing: border-box;
+        color: var(--azul-links);
+        font-family: var(--raleway);
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 150px;
+        max-width: 10rem;
+        padding: .5rem .5rem;
+        text-align: center;
+        transition: 400ms ease-in-out;
+        width: 100%;
+    }
+    .cabecalho__login--botao:hover {
+        background-color: var(--azul-hoverlogo);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__pesquisa--barra {
+        background-color: var(--cinza-pesquisa);
+        background-image: url(../img/logo/lupa.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position-x: 23rem;
+        border: none;
+        border-radius: 20px;
+        display: flex;
+        height: 3rem;
+        margin-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1.5rem;
+        width: 25rem;
+    }
+    .cabecalho__pesquisa--botao {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        margin-left: 4rem;
+        margin-right: 8rem;
+    }
+    .cabecalho__logo--img {
+        width: 12rem;
+    }
+    .cabecalho__login--botao {
+        font-size: 1.2rem;
+        max-width: 13rem;
+        max-height: 7rem;
+        padding: 1rem 1rem;
+    }
+
+}

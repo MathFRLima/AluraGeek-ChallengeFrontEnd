@@ -1,0 +1,71 @@
+@media screen and (min-width: 0) {
+    .chamada {
+        background-color: var(--branco);
+    }
+    .chamada__banner {
+        background-image: url('../img/banner/banner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 12rem;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .chamada__titulo {
+        color: var(--branco);
+        font-family: var(--raleway);
+        font-size: 20px;
+        margin: .5rem 0.5rem;
+    }
+    .chamada__descricao {
+        color: var(--branco);
+        font-family: var(--raleway);
+        font-size: 15px;
+        margin: .25rem 0.5rem;
+    }
+    .chamada__botao {
+        background-color: var(--azul-links);
+        border: none;
+        color: var(--branco);
+        display: flex;
+        font-family: var(--raleway);
+        font-size: 12px;
+        font-weight: 500;
+        justify-content: center;
+        margin: .5rem 0.5rem;
+        padding: .5rem .75rem;
+        text-align: center;
+        width: 7rem;
+    }
+    .chamada__botao:hover {
+        background-color: var(--azul-hover);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .chamada__banner {
+        height: 15rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .chamada__banner {
+        height: 25rem;
+    }
+    .chamada__titulo {
+        font-size: 50px;
+        margin: .35rem 4rem;
+    }
+    .chamada__descricao {
+        font-size: 23px;
+        margin: .25rem 4rem;
+    }
+    .chamada__botao {
+        font-size: 14px;
+        margin: 1rem 4rem;
+        padding: 1.1rem 1.1rem;
+        width: 10rem;
+    }
+}
