@@ -1,0 +1,309 @@
+:root {
+    --azul-fundo: #EAF2FD;
+    --azul-links: #2A7AE4;
+    --azul-hoverlogo: #D4E4FA;
+    --azul-hover: #5595E9;
+    --branco: #FFFFFF;
+    --cinza-pesquisa: #F5F5F5;
+    --cinza-fundo: #E5E5E5;
+    --cinza-texto: #A2A2A2;
+    --preto-texto: #464646;
+
+    --raleway: 'Raleway', sans-serif;
+}
+body {
+    font-family: var(--raleway);
+    background-color: var(--branco);
+}
+
+/* ----- HEADER ----- */
+@media screen and (min-width: 320px) {
+    
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    width: calc(100% - 2rem);
+    max-width: 800px;
+}
+.cabecalho__logo {
+    width: 8rem;
+    margin-right: .5rem;
+}
+.cabecalho__busca--barra {
+    display: none;
+}
+.cabecalho__login {
+    background-color: var(--branco);
+    border: 1px solid var(--azul-links);
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--azul-links);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 400ms ease-in-out;
+    margin-right: .5rem;
+}
+.cabecalho__login:hover {
+    background-color: var(--azul-hoverlogo);
+    cursor: pointer;
+}
+.cabecalho__busca {
+    align-items: center;
+    background: none;
+}
+
+/* ----- CONTEÚDO ----- */
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--cinza-fundo);
+    padding: 3rem 0;
+}
+.conteudo__iniciar {
+    margin: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.conteudo__titulo {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--preto-texto);
+    text-align: center;
+}
+.conteudo__email, .conteudo__senha {
+    height: 2.5rem;
+    width: 17rem;
+    border: none;
+    background: var(--branco);
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    color: var(--preto-texto);
+}
+.conteudo__email::placeholder,.conteudo__senha::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    position: static;
+    color: var(--cinza-texto);
+    align-items: center;
+}
+.conteudo__botao {
+    border: none;
+    margin-top: .5rem;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--branco);
+    background-color: var(--azul-links);
+    width: 7rem;
+    height: 2.75rem;
+    transition: 400ms ease-in-out;
+}
+.conteudo__botao:hover {
+    background-color: var(--azul-hover);
+    cursor: pointer;
+}
+
+/* ----- FOOTER -----*/
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--azul-fundo);
+    
+}
+.rodape__azul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+.rodape__azul--logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.rodape__azul--institucional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.institucional__lista--item {
+    color: var(--preto-texto);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin: .75rem 0;
+}
+.contato__titulo {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--preto-texto);
+    margin: 1rem 1rem;
+}
+.contato__nome,.contato__msg {
+    height: 2.5rem;
+    width: calc(100% - 2rem);
+    max-width: 540px;
+    border: none;
+    background: var(--branco);
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    color: var(--preto-texto);
+}
+.contato__msg {
+    height: 5rem;
+}
+.contato__botao {
+    border: none;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--branco);
+    background-color: var(--azul-links);
+    width: 10rem;
+    height: 2.5rem;
+    transition: 400ms ease-in-out;
+}
+.contato__botao:hover {
+    background-color: var(--azul-hover);
+    cursor: pointer;
+}
+.rodape__branco {
+    background-color: var(--branco);
+    width: 100vw;
+    height: 150px;
+    color: var(--preto-texto);
+    padding: 3.5rem 0;
+    
+}
+.rodape__branco--titulo {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+/* ----- HEADER ----- */
+.cabecalho {
+    justify-content: space-around;
+    margin: 1.5rem 2rem;
+    max-width: 1024px;
+}
+.cabecalho__busca--barra {
+    display: inline-block;
+    height: 2.5rem;
+    width: 17rem;
+    border: none;
+    background: var(--cinza-pesquisa);
+    background-image: url(../img/logo/lupa-barra.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: calc(100% - 1rem);
+    padding: 0 1rem;
+    border-radius: 20px;
+    color: var(--preto-texto);
+}
+.cabecalho__busca {
+    display: none;
+}
+.cabecalho__login {
+    margin-right: 0;
+}
+.rodape__azul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+.rodape__azul--logo {
+    grid-row: 1 / 1;
+}
+.rodape__azul--institucional {
+    grid-row: 2 / 2;
+}
+.institucional__lista--item {
+    padding-top: .75rem;
+}
+.rodape__azul--contato {
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+    padding-top: 1rem;
+}
+.rodape__branco {
+    height: 8rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.container__cabecalho {
+    display: flex;
+    justify-content: space-around;
+}
+.cabecalho {
+    max-width: 1250px;
+}
+.cabecalho__logo {
+    height: 3rem;
+    width: 10rem;
+}
+.cabecalho__busca--barra {
+    width: 20rem;
+}
+.cabecalho__login {
+    margin-left: 20rem;
+    width: 10rem;
+    height: 3rem;
+    
+}
+.conteudo__titulo {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+.conteudo__email,.conteudo__senha {
+    width: 30rem;
+    height: 4rem;
+}
+.conteudo__botao {
+    width: 30rem;
+    height: 3.5rem;
+}
+.rodape__azul {
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 100%;
+    column-gap: 5rem;
+}
+.rodape__azul--logo {
+    grid-column: 1 / 1;
+    padding: 2rem;
+}
+.rodape__azul--institucional {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-items: center
+}
+.institucional__lista--item {
+    text-align: left;
+}
+.rodape__azul--contato {
+    grid-column: 3 / 4;
+    margin-right: 7rem;
+}
+}
