@@ -1,0 +1,175 @@
+:root {
+    --azul-fundo: #EAF2FD;
+    --azul-links: #2A7AE4;
+    --azul-hoverlogo: #D4E4FA;
+    --azul-hover: #5595E9;
+    --branco: #FFFFFF;
+    --cinza-pesquisa: #F5F5F5;
+    --cinza-fundo: #E5E5E5;
+    --cinza-texto: #A2A2A2;
+    --preto-texto: #464646;
+
+    --raleway: 'Raleway', sans-serif;
+}
+body {
+    font-family: var(--raleway);
+    background-color: var(--branco);
+}
+
+@media screen and (min-width: 320px) {
+/* ----- CONTEÚDO ----- */
+    .conteudo {
+        background-color: var(--cinza-fundo);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+    }
+    .conteudo__iniciar {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 3rem 2rem;
+    }
+    .conteudo__titulo {
+        color: var(--preto-texto);
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .conteudo__add {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .conteudo__add--text {
+        display: none;
+    }
+    .conteudo__add--botao {
+        display: none;
+    }
+    .conteudo__img {
+        background-color: var(--branco);
+        width: 100%;
+        margin-bottom: .5rem;
+        height: 15rem;
+        border: 1px dashed #c8c8c8;
+        background-image: url(../img/logo/mais.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 4rem;
+
+    }
+    .conteudo__nome, .conteudo__valor {
+        background: var(--branco);
+        border-radius: 4px;
+        border: none;
+        color: var(--preto-texto);
+        height: 2.5rem;
+        margin-bottom: .5rem;
+        width: 100%;
+    }
+    .conteudo__desc {
+        background: var(--branco);
+        border-radius: 4px;
+        border: none;
+        color: var(--preto-texto);
+        height: 4rem;
+        margin-bottom: .5rem;
+        width: 100%;
+    }
+    .conteudo__nome::placeholder,.conteudo__valor::placeholder,.conteudo__desc::placeholder {
+        align-items: center;
+        color: var(--cinza-texto);
+        font-weight: 400;
+        font-size: 16px;
+        position: static;
+    }
+    .conteudo__botao {
+        background-color: var(--azul-links);
+        border: none;
+        color: var(--branco);
+        font-size: 16px;
+        font-weight: 600;
+        height: 2.75rem;
+        margin-top: .5rem;
+        text-align: center;
+        transition: 400ms ease-in-out;
+        width: 9rem;
+    }
+    .conteudo__botao:hover {
+        background-color: var(--azul-hover);
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .conteudo__iniciar {
+        align-items: flex-start;
+        margin: 3rem 3rem;
+    }
+    .conteudo__nome, .conteudo__valor {
+        width: 100%;
+    }
+    .conteudo__desc {
+        width: 100%;
+    }
+    .conteudo__botao {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .conteudo__iniciar {
+        margin: 3rem 10rem;
+        align-items: center;
+    }
+    .conteudo__titulo {
+        font-size: 32px;
+        margin-bottom: 2rem;
+    }
+    .conteudo__add {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .conteudo__img {
+        width: 20rem;
+    }
+    .conteudo__add--text {
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--preto-texto);
+        margin: 0 1rem;
+    }
+    .conteudo__add--botao {
+        display: flex;
+        background-color: var(--cinza-fundo);
+        border: 1px solid var(--azul-links);
+        color: var(--azul-links);
+        font-size: 16px;
+        font-weight: 600;
+        height: 2.75rem;
+        margin-top: .5rem;
+        text-align: center;
+        transition: 400ms ease-in-out;
+        width: 16.5rem;
+    }
+    .conteudo__add--botao:hover {
+        background-color: var(--azul-hoverlogo);
+        cursor: pointer;
+    }
+    .conteudo__nome,.conteudo__valor {
+        height: 4rem;
+        width: 40rem;
+    }
+    .conteudo__desc {
+        height: 6rem;
+        width: 40rem;
+    }
+    .conteudo__botao {
+        height: 3.5rem;
+        width: 40rem;
+    }
+}
