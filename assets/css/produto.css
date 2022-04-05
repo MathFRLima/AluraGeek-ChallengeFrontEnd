@@ -1,0 +1,201 @@
+@media screen and (min-width: 0) {
+    .prod {
+        align-items: center;
+        background-color: var(--cinza-fundo);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 4rem;
+        width: calc(100% - 50px);
+    }
+    .prod__banner {
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+    .prod__banner-img {
+        height: 400px;
+        width: 420px;
+    }
+    .prod__banner-texto {
+        align-items:flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 1rem;
+        margin-top: 5rem;
+        max-width: 700px;
+    }
+    .texto__titulo {
+        color: var(--preto-texto);
+        font-size: 52px;
+        font-weight: 500;
+    }
+    .texto__valor {
+        color: var(--preto-texto);
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .texto__descricao {
+        color: var(--preto-texto);
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .produtos {
+        padding: 1.5rem 1rem;
+    }
+    .produtos__cabecalho {
+        display: flex;
+        justify-content: space-between;
+    }
+    .produtos__titulo {
+        color: var(--preto-texto);
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .produtos__conteudo {
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        grid-area: conteudo;
+        padding: 1rem 0;
+    }
+    .produtos__card {
+        background: var(--cinza-fundo);
+        display: grid;
+        grid-template-areas: 
+            "card-imagem"
+            "card-corpo";
+        grid-template-columns: 100%;
+        margin-bottom: 1rem;
+    }
+    .produtos__card:nth-child(5) {
+        display: none;
+    }
+    .produtos__card:nth-child(6) {
+        display: none;
+    }   
+    .produtos__card--img {
+        grid-area: card-imagem;
+        height: 100%;
+        width: 100%;
+    }
+    .produtos__card--corpo {
+        display: grid;
+        grid-area: card-corpo;
+        grid-template-rows: 20% 40% 20%;
+        row-gap: .25rem;
+    }
+    .produtos__card--titulo {
+        color: var(--preto-texto);
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .produtos__card--valor {
+        color: var(--preto-texto);
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .produtos__card--pag {
+        color: var(--azul-links);
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+    .produtos__cabecalho {
+        margin-right: 2rem;
+    }
+    .prod {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+    .prod__banner {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .prod__banner-img {
+        width: 100%;
+    }
+    .prod__banner-texto {
+        margin-left: 1.5rem;
+    }
+    .produtos__conteudo {
+        column-gap: .5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .produtos__card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .prod {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 1.5rem;
+        width: calc(100% - 50px);
+    }
+    .prod__banner {
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+    .prod__banner-img {
+        height: 400px;
+        width: 420px;
+    }
+    .prod__banner-texto {
+        align-items:flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 1rem;
+        margin-top: 5rem;
+        max-width: 700px;
+    }
+    .produtos__card {
+        width: calc(25% - 1rem);
+    }
+    .produtos__card:nth-child(5) {
+        display: none;
+    }
+    .produtos__card:nth-child(6) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .prod {
+        margin-left: 4rem;
+    }
+    .prod__banner {
+        max-width: 550px;
+        width: calc(100% - 3rem);
+    }
+    .prod__banner-img {
+        height: 500px;
+        width: 550px;
+    }
+    .produtos__card {
+        width: calc(16.6% - 1rem);
+    }
+    .produtos {
+        padding: 0 4rem;
+    }
+    .produtos__cabecalho {
+        margin-right: 4rem;
+        margin-top: 2rem;
+    }
+    .produtos__card:nth-child(5) {
+        display: grid;
+        }
+    .produtos__card:nth-child(6) {
+        display: grid;
+    }
+}

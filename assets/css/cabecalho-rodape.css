@@ -1,0 +1,217 @@
+/* ----- STYLE ----- */
+:root {
+    --azul-fundo: #EAF2FD;
+    --azul-links: #2A7AE4;
+    --azul-hoverlogo: #D4E4FA;
+    --azul-hover: #5595E9;
+    --branco: #FFFFFF;
+    --cinza-pesquisa: #F5F5F5;
+    --cinza-fundo: #E5E5E5;
+    --cinza-texto: #A2A2A2;
+    --preto-texto: #464646;
+
+    --raleway: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--raleway);
+    background-color: var(--cinza-fundo);
+}
+@media screen and (min-width: 320px) {
+    /* ----- HEADER ------*/
+    .cabecalho__container {
+        align-items: center;
+        background-color: var(--branco);
+        display: flex;
+        flex-direction: column;
+        height: 125px;
+    }
+    .cabecalho__menu {
+        align-items: center;
+        background-color: var(--branco);
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+        width: calc(100% - 50px);
+    }
+    .cabecalho__menu--logo {
+        width: 75%;
+    }
+    .cabecalho__menu--busca1 {
+        display: none;
+    }
+    .cabecalho__menu--login {
+        border: 1px solid var(--azul-links);
+        background: none;
+        color: var(--azul-links);
+        font-size: 14px;
+        font-weight: 600;
+        height: 3rem;
+        margin-right: 2rem;
+        transition: 300ms ease-in-out;
+        width: 11rem;
+    }
+    .cabecalho__menu--login:hover {
+        cursor: pointer;
+        background-color: var(--azul-hoverlogo);
+    }
+
+    /* ----- FOOTER ------ */
+    .rodape__container {
+        align-items: center;
+        background-color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .rodape__azul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: calc(100% - 50px);
+
+    }
+    .rodape__azul--logo {
+        margin: 1.25rem 0;
+    }
+    .rodape__azul--institucional {
+        color: var(--preto-texto);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.25rem;
+        text-align: center;
+    }
+    .rodape__azul--institucional-item {
+        margin-bottom: 1rem;
+    }
+    .rodape__azul--contato-titulo {
+        color: var(--preto-texto);
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: .5rem;
+        margin-top: 1.25rem;
+    }
+    .rodape__azul--contato-nome {
+        border: none;
+        border-radius: 4px;
+        height: 60px;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .rodape__azul--contato-msg {
+        border: none;
+        border-radius: 4px;
+        height: 80px;
+        margin-bottom: .5rem;
+        width: 100%;
+    }
+    .rodape__azul--contato-botao {
+        color: var(--branco);
+        background-color: var(--azul-links);
+        border: none;
+        height: 45px;
+        margin-bottom: 1rem;
+        transition: 300ms ease-in-out;
+        width: 160px;
+    }
+    .rodape__azul--contato-botao:hover {
+        cursor: pointer;
+        background-color: var(--azul-hover);
+    }
+    .rodape__branco {
+        align-items: center;
+        background-color: var(--branco);
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: center;
+        width: 100%;
+    }
+    .rodape__branco--titulo {
+        color: var(--preto-texto);
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* ----- HEADER ------*/
+    .cabecalho__menu--busca1 {
+        background-color: var(--cinza-pesquisa);
+        background-image: url(../img/logo/lupa-barra.png);
+        background-position: center;
+        background-position-x: 17rem;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        height: 40px;
+        padding-left: 1rem;
+        position: relative;
+        right: calc(25% - 150px); /*REVER*/
+        width: 300px;
+    }
+    .cabecalho__menu--busca2 {
+        display: none;
+    }
+    .cabecalho__menu--login {
+        order: 1;
+    }
+
+    /* ----- FOOTER ------ */
+    .rodape__azul {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 33.33% 33.33% 33.33%;
+        margin-top: 2rem;
+    }
+    .rodape__azul--logo {
+        grid-column: 1 / 1;
+        grid-row: 1/1;
+    }
+    .rodape__azul--institucional {
+        grid-column: 1 / 1;
+        grid-row: 2 / 4;
+        text-align: left;
+    }
+    .rodape__azul--contato {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    .rodape__azul--contato-nome,.rodape__azul--contato-msg {
+        width: calc(100% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* ----- HEADER ------*/
+    .cabecalho__container {
+        height: 125px;
+    }
+    .cabecalho__menu {
+        width: calc(100% - 6rem);
+    }
+    .cabecalho__menu--logo {
+        margin-right: 2rem;
+        width: 10rem;
+    }
+    .cabecalho__menu--login {
+        font-size: 16px;
+        height: 3.25rem;
+        width: 12rem;
+    }
+
+    /* ----- FOOTER ------ */
+    .rodape__azul {
+        display: flex;
+        flex-direction: row;
+        width: calc(100% - 6rem);
+    }
+    .rodape__azul--logo {
+        bottom: 7rem;
+        position: relative;
+    }
+}

@@ -1,0 +1,144 @@
+@media screen and (min-width: 320px) {
+    /* ----- BANNER ----- */
+    .conteudo__container {
+        background-color: var(--branco);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--cinza-fundo);
+    }
+    .chamada__container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        background-image: url(../img/banner/banner.png);
+        width: 100%;
+        height: 450px;
+        background-position: center;
+        background-size: cover;
+
+    }
+    .chamada__banner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .chamada__titulo {
+        color: var(--branco);
+        font-size: 52px;
+        font-weight: 700;
+    }
+    .chamada__descricao {
+        color: var(--branco);
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .chamada__botao {
+        font-size: 16px;
+        font-weight: 400;
+        background-color: var(--azul-links);
+        color: var(--branco);
+        border: none;
+        height: 55px;
+        width: 160px;
+        transition: 300ms ease-in-out;
+        text-align: center;
+        justify-content: center;
+    }
+    .chamada__botao:hover {
+        background-color: var(--azul-hover);
+        cursor: pointer;
+    }
+
+    /* ----- PRODUTOS ------ */
+    .produtos__container {
+        /*background-color: blue;*/
+        display: grid;
+        grid-template-areas: 'conteudo';
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: calc(100% - 3rem);
+    }
+    .produtos__cabecalho {
+        display: flex;
+        justify-content: space-between;
+    }
+    .produtos__titulo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .produtos__botao {
+        background-color: var(--cinza-fundo);
+        background-image: url(../img/logo/seta.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        border: none;
+        color: var(--azul-links);
+        padding: 0 1.5rem;
+    }
+    .produtos__conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        grid-area: conteudo;
+        padding: 1rem 0;
+    }
+    .produtos__card {
+        background: var(--branco);
+        display: grid;
+        grid-template-areas: 
+            "card-imagem"
+            "card-corpo";
+        grid-template-columns: 100%;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .produtos__card:first-child, .produtos__card:nth-child(3) {
+        margin-left: 0;
+    }
+    .produtos__card:nth-child(5) {
+        display: none;
+    }
+    .produtos__card:nth-child(6) {
+        display: none;
+    }   
+    .produtos__card--img {
+        grid-area: card-imagem;
+        height: 100%;
+        width: 100%;
+    }
+    .produtos__card--corpo {
+        background-color: var(--cinza-fundo);
+        display: grid;
+        grid-area: card-corpo;
+        grid-template-rows: 20% 40% 20%;
+        row-gap: .25rem;
+    }
+    .produtos__card--titulo {
+        color: var(--preto-texto);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .produtos__card--valor {
+        color: var(--preto-texto);
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .produtos__card--pag {
+        color: var(--azul-links);
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+}

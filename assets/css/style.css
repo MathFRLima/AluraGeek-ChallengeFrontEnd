@@ -26,12 +26,12 @@ body {
     font-family: var(--raleway);
 }
 .botao {
-    background-color: var(--branco);
+    color: var(--azul-links);
+    background-color: var(--cinza-fundo);
     background-image: url(../img/logo/seta.png);
     background-position: right;
     background-repeat: no-repeat;
     border: none;
-    color: var(--azul-links);
     padding: 0 1.5rem;
 }
 .rodape {

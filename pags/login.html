@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek | Login</title>
+    <link rel="icon" type="image/svg" href="../assets/img/logo/logo-2.svg">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/cabecalho-rodape.css">
     <link rel="stylesheet" href="../assets/css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="container__cabecalho">
-        <div class="cabecalho">
-            <a href="#" class="cabecalho__logo--link">
-            <img src="../assets/img/logo/Logo.png" alt="Logo da AluraGeek" ref="logo" class="cabecalho__logo"></a>
-            <a href="#"><input type="search" placeholder="O que deseja encontrar?" class="cabecalho__busca--barra"></a>
-            <a href="login"><input type="button" value="Login" ref="login" class="cabecalho__login"></a>
-            <a href="busca"><img src="../assets/img/logo/lupa.png" alt="Botão de busca" ref="busca" class="cabecalho__busca"></a>
+    <header class="cabecalho__container">
+        <div class="cabecalho__menu">
+            <a><img src="../assets/img/logo/Logo.png" alt="Logo da AluraGeek" class="cabecalho__menu--logo"></a>
+            <input type="search" placeholder="O que deseja encontrar?" class="cabecalho__menu--busca1">
+            <input type="button" value="Login" class="cabecalho__menu--login">
+            <a href="#"><img src="../assets/img/logo/lupa-barra.png" alt="Botão de busca" class="cabecalho__menu--busca2"></a>
         </div>
     </header>
     <main>
@@ -29,32 +32,26 @@
             </div>
         </section>
     </main>
-    <footer class="rodape">
+    <footer class="rodape__container">
         <section class="rodape__azul">
-            <div class="rodape__azul--logo">
-                <a href=""><img src="../assets/img/logo/Logo.png" alt="Logo da AluraGeek"></a>
-            </div>
-            <div class="rodape__azul--institucional">
-                <ul class="intitucional__lista">
-                    <li class="institucional__lista--item">Quem somos nós</li>
-                    <li class="institucional__lista--item">Politica de privacidade</li>
-                    <li class="institucional__lista--item">Programa fidelidade</li>
-                    <li class="institucional__lista--item">Nossas lojas</li>
-                    <li class="institucional__lista--item">Quero ser franqueado</li>
-                    <li class="institucional__lista--item">Anuncie aqui</li>
-                </ul>
-            </div>
+            <img src="../assets/img/logo/Logo.png" alt="Logo da AluraGeek" class="rodape__azul--logo">
+            <ul class="rodape__azul--institucional">
+                <li class="rodape__azul--institucional-item">Quem somos nós</li>
+                <li class="rodape__azul--institucional-item">Politica de privacidade</li>
+                <li class="rodape__azul--institucional-item">Programa fidelidade</li>
+                <li class="rodape__azul--institucional-item">Nossas lojas</li>
+                <li class="rodape__azul--institucional-item">Quero ser franqueado</li>
+                <li class="rodape__azul--institucional-item">Anuncie aqui</li>
+            </ul>
             <div class="rodape__azul--contato">
-                <h2 class="contato__titulo">Fale conosco</h2>
-                <input type="text" placeholder="Nome" class="contato__nome">
-                <input type="text" placeholder="Escreva sua mensagem" class="contato__msg">
-                <input type="button" value="Enviar mensagem" class="contato__botao">
+                <h2 class="rodape__azul--contato-titulo">Fale conosco</h2>
+                <input type="text" placeholder="Nome" class="rodape__azul--contato-nome">
+                <input type="text" placeholder="Escreva sua mensagem" class="rodape__azul--contato-msg">
+                <input type="button" value="Enviar mensagem" class="rodape__azul--contato-botao">
             </div>
         </section>
         <section class="rodape__branco">
-            <div>
-                <h2 class="rodape__branco--titulo">Desenvolvido por Matheus Lima<br>2022</h2>
-            </div>
+            <h3 class="rodape__branco--titulo">Desenvolvido por Matheus Lima<br>2022</h3>
         </section>
     </footer>
 </body>
